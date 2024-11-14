@@ -1,0 +1,337 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-color: #4891ff;
+    --light-color: #ffffff;
+    --dark-color : #111; 
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #333;   
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+@font-face {
+    font-family: 'rettisha';
+    src: url('../Rettisha\ Regular.ttf');
+}
+
+/* navbar */
+.navbar{
+    background: #fff;
+    padding: 20px;
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .main-menu  ul{
+    display: flex;
+}
+.navbar ul li a{
+    padding: 10px 20px;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.navbar ul li a:hover{
+    color: var(--primary-color);
+}
+
+.navbar ul li i{
+    margin-right: 10px;
+}
+
+
+.navbar ul li:last-child a{
+    margin-left: 10px;
+}
+
+/*HERO*/
+.hero{
+    margin-bottom: 50px;
+}
+
+.hero .container{
+    background: url('/images/hero-bg.png') no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    height: 550px;
+
+}
+
+.hero .hero-content{
+    width: 70%;
+}
+
+.hero .hero-text{
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+
+.container-login{
+    max-width: 1100px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    background: url('/images/login-hero-1.png') no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 100px;
+}
+
+.box{
+    display: block;
+    background-color: #fff;
+    margin-top: 50px;
+    max-width: fit-content;
+    padding: 50px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 15px 23px rgba(0,0,0,0.25),0 3px 6px rgba(0,0,0,0.22);;
+}
+
+.box .heading{
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #35083D;
+    margin-bottom: 10px;
+}
+
+.box .field{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+
+.box .input input{
+    height: 25px;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input[type=submit]{
+    font-size: 1.3rem;
+    padding: 5px 10px;
+    display: inline-block;
+    background: var(--primary-color);
+    color: #fff;
+    box-shadow: 7px 7px rgba(0,0,0,0.8);
+    border-radius: 2px;
+}
+
+
+.log-btn :hover{
+    background-color: #fff;
+    color: var(--primary-color);
+    transition: 0.8s;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.links{
+    margin-top: 20px;
+}
+
+
+.main-buttons{
+    margin-top: 10px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.main-buttons :hover{
+    background-color: #fff;
+    color: var(--light-color);
+    transition: 0.8s;
+    box-shadow: none;
+}
+
+/* Utility Classes */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.container-sm {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/*card*/
+
+.card{
+    background: #fff;
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/*buttons*/
+.btn-log{
+
+    max-width: 120px;
+    display: inline-block;
+    padding: 8px 8px;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+}
+.btn{
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--light-color);
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+.btn :hover{
+    opacity: 0.8;
+}
+
+.btn-primary{
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btn-dark{
+    background: var(--dark-color);
+    color: #fff;
+}
+
+.btn-block{
+    display: block;
+    width: 100%;
+}
+
+/*text*/
+.text-xxl{
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+
+.text-xl{
+    font-size: 2.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 40px 0 20px;
+}
+
+.text-lg{
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 30px 0 20px;
+}
+
+.text-med{
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+
+.text-sm{
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: normal;
+    margin: 10px 0 5px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/*background*/
+.bg-primary{
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.bg-light{
+    background: var(--light-color);
+    color: #333;
+}
+
+.bg-dark{
+    background: var(--dark-color);
+    color: #fff;
+}
+
+.bg-black{
+    background: #000;
+    color: #fff;
+}
+
+@media only screen and (max-width:840px){
+    .main-box .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .top .box{
+        margin: 10px 10px;
+    }
+    .bottom{
+        margin-top: 0;
+    }
+}
+.Nmessage{
+    text-align: center;
+    background: rgb(241, 70, 70);
+    padding: 15px;
+    border:1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+}
+.Pmessage{
+    text-align: center;
+    background: green;
+    padding: 15px;
+    border:1px solid black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+}
