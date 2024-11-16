@@ -74,7 +74,7 @@
 
 
                 ?>
-                <header class="heading text-center text-med">Login</header>
+                <header class="heading text-center text-med">Register</header>
                 <form action="" method="post">
                     <div class="field input">
                         Username<input type="text" name="username" id="username" required>
